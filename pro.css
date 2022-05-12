@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    
+}
+body{
+    background-color: black;
+    z-index: -2;
 }
 .hello{
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +24,6 @@
     color: rgb(254, 245, 232);
     text-transform: uppercase;
     font-size: 240%;
-    /* margin-bottom: 25px; */
     background-color: black;
 }
 .about{
@@ -29,9 +33,11 @@
 }
 .about-container{
     width: 100%;
+    position: absolute;
     display: flex;
     flex-direction: row;
     background-color: black;
+    overflow: hidden;
 }
 .left-b{
     position: relative;
@@ -44,6 +50,7 @@
     font-weight: 300;
     letter-spacing: 0.8px;
     color: white;
+    height: 100%;
 }
 .right-b{
     position: relative;
@@ -53,7 +60,7 @@
     width: 40%;
     display: flex;
     flex-direction: row;
-    
+    height: 100%;
 }
 .r1 , .r2{
     width: 100%;   
@@ -87,10 +94,121 @@
     width: 100vw;
     height: 100vh;
 }
+.projects-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+}
+.left-div{
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 33%;
+    height: 80vh;
+    margin-right: 10px;
+    border-radius: 6%;
+    background-image: linear-gradient(to top, #bdc3c7,#2c3e50);
+    /* z-index: -1; */
+}
+.p1{
+    position: relative;
+    top: 100px;
+    text-align: justify;
+    line-height: 150%;
+    width: 90%;
+    left: 20px;
+    text-align: center;
+    font-size:large;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.p2{
+    bottom: 400px;
+    position: relative;
+    text-align: justify;
+    line-height: 150%;
+    width: 90%;
+    left: 20px;
+    text-align: center;
+    font-size:large;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.p3{
+    position: relative;
+    top: 100px;
+    text-align: justify;
+    line-height: 150%;
+    width: 90%;
+    left: 20px;
+    text-align: center;
+    font-size:large;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.left-div > div{
+    color: white;
+    position: relative;
+    width: 115%;
+    height: 40%;
+    right: 20px;
+    background-image: url(rain.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.mid-div{
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 33%;
+    height: 80vh;
+    background-image: linear-gradient(to bottom, #141e30,#243b55);
+    margin-right: 10px;
+    border-radius: 6%;
+}
+.mid-div > div{
+    position: relative;
+    width: 100%;
+    height: 66%;
+    top: 350px;
+    background-image: url(dc1.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.right-div{
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 32%;
+    height: 80vh;
+    background-image: linear-gradient(to top, #000428,#004e92);
+    border-radius: 6%;
+}
+.right-div > div{
+    position: relative;
+    width: 90%;
+    left: 20px;
+    height: 50%;
+    background-image: url(dc3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
 .education{
     width: 100vw;
-    height: 100h;
+    height: 100vh;
 }
+
 
 .menu-wrap{
     position: fixed;
@@ -227,4 +345,8 @@
 }
 a:hover{
     color: red;
+}
+footer{
+    color: white;
+    text-align: center;
 }
