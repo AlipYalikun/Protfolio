@@ -2,16 +2,96 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .hello{
     font-family: 'Montserrat', sans-serif;
     color: rgb(254, 245, 232);
-    position: fixed;
+    position: absolute;
     font-size: 110px;
     top: 200px;
     left: 100px;
     z-index: 1;
 }
+.section-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(254, 245, 232);
+    text-transform: uppercase;
+    font-size: 240%;
+    /* margin-bottom: 25px; */
+    background-color: black;
+}
+.about{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+.left-b{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 40%;
+    text-align: justify;
+    line-height: 150%;
+    font-size: 150%;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    color: white;
+}
+.right-b{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.r1 , .r2{
+    width: 100%;   
+}
+.image-div{
+    width: 280px;
+    height: 300px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+.image-div:hover{
+    opacity: 0.75;
+}
+#i1{
+    background-image: url(aBasketball.png);
+    
+}
+#i2{
+    background-image: url(aC.png);
+}
+#i3{
+    background-image: url(aCamera.png);
+}
+#i4{
+    background-image: url(aComp.png);
+}
+
+.projects{
+    width: 100vw;
+    height: 100vh;
+}
+.education{
+    width: 100vw;
+    height: 100h;
+}
+
 .menu-wrap{
     position: fixed;
     top: 0;
@@ -100,13 +180,13 @@
 }
 .lists, li{
     display: inline-block;
-    padding: 0 70px;
+    padding: 0 80px;
 }
 .lists{
     list-style: none;
-    position: fixed;
-    top: 15px;
-    right: 80px;
+    position: relative;
+    top: -14px;
+    left: 40px;
 }
 .lists, a{
     text-decoration: none;
@@ -127,12 +207,24 @@
     background-position: center;
     z-index: -1;
 }
+.section-bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position:center;
+    z-index: -1;
+}
 .man{
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 50%;
     object-fit: cover;
     opacity: 0.5;
+    border-radius: 5%;
+}
+a:hover{
+    color: red;
 }
