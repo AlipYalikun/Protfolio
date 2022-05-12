@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hello{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(254, 245, 232);
+    position: fixed;
+    font-size: 110px;
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+}
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-wrap, .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/*top and bottom lines of hamburger*/
+.menu-wrap, .hamburger >div::before,
+.menu-wrap, .hamburger >div::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.main-wrap ,.hamburger > div::after{
+    top: 10px;
+}
+
+/*animmation*/
+.main-wrap, .toggler:checked + .hamburger >div {
+    transform: rotate(135deg);
+}
+/*turn lines into X*/
+
+.main-wrap, .toggler:checked + .hamburger >div::before,
+.main-wrap, .toggler:checked + .hamburger >div::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.main-wrap, .toggler:checked:hover + .hamburger >div {
+    transform: rotate(225deg);
+}
+
+/* show menu */
+.menu{
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+    visibility:hidden;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:400ms ease;
+    -moz-transition:400ms ease;
+    -o-transition:400ms ease;
+    transition:400ms ease;
+
+}
+.lists, li{
+    display: inline-block;
+    padding: 0 70px;
+}
+.lists{
+    list-style: none;
+    position: fixed;
+    top: 15px;
+    right: 80px;
+}
+.lists, a{
+    text-decoration: none;
+    color: rgb(254, 245, 232);
+    font-size: medium;
+}
+.toggler:checked ~ .menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.man{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.5;
+}
