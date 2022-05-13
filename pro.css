@@ -113,6 +113,15 @@ body{
     background-image: linear-gradient(to top, #bdc3c7,#2c3e50);
     /* z-index: -1; */
 }
+.left-div:hover{
+    opacity: 0.7;
+}
+.mid-div:hover{
+    opacity: 0.7;
+}
+.right-div:hover{
+    opacity: 0.7;
+}
 .p1{
     position: relative;
     top: 100px;
@@ -208,7 +217,38 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+.un{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+}
+.uni{
+    position: relative;
+    top: 20px;
+    width: 50%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    opacity: 0.5;
+    background-image: url(u.png);
+}
+.uni:hover{
+    opacity: 0.4;
+}
+.right-edu{
+    position: relative;
+    color: white;
+    top: 150px;
+    left: 30px;
+    width: 40%;
+    height: 40vh;
+    border: 8px dotted lightgrey;
+    border-radius: 10%;
+}
 
 .menu-wrap{
     position: fixed;
@@ -326,8 +366,8 @@ body{
     z-index: -1;
 }
 .section-bg{
-    width: 100vw;
-    height: 100vh;
+    width: 20vw;
+    height: 25vh;
     background-color: black;
     background-size: cover;
     background-position:center;
@@ -349,4 +389,42 @@ a:hover{
 footer{
     color: white;
     text-align: center;
+}
+.social-section{
+    width: 100vw;
+    height: 50vh;
+    background-image: linear-gradient(to bottom,#000000,#0f2c4b);
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.socials{
+    margin: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 250%;
+}
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40vw;
+    margin: 0 auto;
+}
+.media-icon{
+    position: relative;
+    top: 70px;
+    margin: 0 7.5px;
+}
+.email{
+    position: relative;
+    top: 10%;
+    font-size: 120%;
+}
+.end{
+    position: fixed;
+    bottom: 30px;
+    left: 592px;
+    opacity: 0.3;
 }
