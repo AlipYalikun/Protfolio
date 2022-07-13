@@ -455,3 +455,60 @@ h3{
         margin: 4rem auto;
     }
 }
+
+/* smaller tablet view */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .right-b, .image-div{
+        display: none;
+     }
+     .left-b{
+         min-width: 100%;
+         text-align: center;
+         justify-content: space-evenly;
+         /* margin: 15px 15px; */
+         line-height: 250%;
+         letter-spacing: normal;
+         display: contents;
+     }
+     .left-b > p{
+         margin: 15px;
+     }
+     #project-container{
+         display: flex;
+         flex-direction: column;
+     }
+     .left-div, .mid-div, .right-div{
+         min-width: 80%;
+         height: 33vh;
+         padding: 1.5rem;
+         margin: 1rem auto;  
+     }
+     .p1, .p2, .p3{
+        text-align: center;
+         justify-content: space-evenly;
+         font-size: larger;
+         line-height: 150%;
+         letter-spacing: normal;
+        
+     }
+     .p4{
+        padding-top: 1rem;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: larger;
+        line-height: 250%;
+        letter-spacing: normal;
+     }
+     #edu-container{
+         flex-direction: column;
+     }
+     .uni{
+        width: 100%;
+         height: 50vh;
+     }
+     .right-edu{
+         width: 100%;
+         margin: 4rem auto;
+     }
+
+}
